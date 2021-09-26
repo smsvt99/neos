@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/neos/static/css/main.5ad2d430.chunk.css",
+    "main.js": "/neos/static/js/main.e11a4db6.chunk.js",
+    "main.js.map": "/neos/static/js/main.e11a4db6.chunk.js.map",
+    "runtime-main.js": "/neos/static/js/runtime-main.1d799463.js",
+    "runtime-main.js.map": "/neos/static/js/runtime-main.1d799463.js.map",
+    "static/js/2.61810ff5.chunk.js": "/neos/static/js/2.61810ff5.chunk.js",
+    "static/js/2.61810ff5.chunk.js.map": "/neos/static/js/2.61810ff5.chunk.js.map",
+    "static/js/3.10bd5518.chunk.js": "/neos/static/js/3.10bd5518.chunk.js",
+    "static/js/3.10bd5518.chunk.js.map": "/neos/static/js/3.10bd5518.chunk.js.map",
+    "index.html": "/neos/index.html",
+    "static/css/main.5ad2d430.chunk.css.map": "/neos/static/css/main.5ad2d430.chunk.css.map",
+    "static/js/2.61810ff5.chunk.js.LICENSE.txt": "/neos/static/js/2.61810ff5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1d799463.js",
+    "static/js/2.61810ff5.chunk.js",
+    "static/css/main.5ad2d430.chunk.css",
+    "static/js/main.e11a4db6.chunk.js"
+  ]
+}
