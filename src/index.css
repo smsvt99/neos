@@ -1,13 +1,148 @@
+
+:root{
+  --controls-height: 150px;
+}
 body {
   margin: 0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aliceblue;
+}
+.app{
+  position: relative;
+}
+#controls{
+  position: sticky;
+  top: 0;
+  height: var(--controls-height);
+  background-color: aliceblue;
+  z-index: 2;
+  border-bottom: 1px solid grey;
+  padding: 10px;
+}
+#controls > div{
+  display: flex;
+  justify-content: space-between;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+td, th {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 3px;
+  /* text-align: center; */
+  background-color: white;
+}
+
+.danger{
+  color: red;
+  font-weight: bold;
+}
+table {
+  /* margin: auto; */
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background: gainsboro;
+  position: sticky;
+  top: 170px; /* controls height + 2*padding */
+}
+th.settingFilter{
+  background: gold;
+}
+
+h2, h3{
+  margin: 0;
+  padding: 0;
+}
+.hidden{
+  opacity: 0;
+  z-index: 0;
+}
+.sortButton span{
+  min-width: 6px;
+}
+img, .sortButton{
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+img:hover, .sortButton:hover{
+  border: 1px solid grey;
+}
+a{
+  display: block;
+  text-align: right;
+  color: black;
+  font-size: 10px;
+}
+label{
+  display: block;
+}
+#loader{
+  position:fixed;
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: url('https://i.pinimg.com/originals/31/a0/d1/31a0d1d5aacc178f5e75d38eaa5940a2.gif');
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 200px;
+  opacity: 1;
+  transition: all 1s ease;
+
+}
+#loader.hidden{
+  opacity: 0;
+  z-index: 0;
+}
+.filter{
+  font-weight: normal;
+  cursor: pointer;
+  display: flex;
+  border-radius: 3px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px grey;
+  background-color: white;
+  justify-content: space-between;
+  width: 100%;
+}
+.flex-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.newFilter{
+  padding: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background-color: gold;
+  box-shadow: 2px 2px 2px grey;
+  position: absolute;
+}
+
+.normal{
+  font-weight: normal
+}
+
+.buttons{
+  float: right;
+}
+
+.counts{
+  margin: 0;
+  padding: 0;
+}
+th div{
+  display: flex;
 }
